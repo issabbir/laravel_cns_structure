@@ -18,10 +18,10 @@
                 </ul>
 
 
-                <li class="{{ Request::is('add-store') || Request::is('store') ? 'active' : '' }}"  data-toggle="collapse" data-target="#products" class="collapsed">
+                <li class="{{ Request::is('add-store') || Request::is('store') ? 'active' : '' }}"  data-toggle="collapse" data-target="#store" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg"></i> Store <span class="arrow"></span></a>
                 </li>
-                <ul class="sub-menu collapse" id="service">
+                <ul class="sub-menu collapse" id="store">
                   <li class="{{ Request::is('add-store') ? 'active' : '' }}"><a href="/add-store">Add Store</a></li>
                     <li class="{{ Request::is('store') ? 'active' : '' }}"><a href="/store">Store List</a></li>
                  </ul>

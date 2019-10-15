@@ -29,7 +29,7 @@
                     <td>{{ $store->name }}</td>
                     <td>{{ $store->address }}</td>
                     <td>{{ $store->type }}</td>
-                    <td>{{ $store->company_id }}</td>
+                    <td>{{ $store->company->name }}</td>
                 <td><a href="/add-store/{{ $store->id }}">Edit</a> | <a onclick="return confirm('Are you sure you want to delete?')" href="/delete-store/{{ $store->id }}">Delete</a></td>
                 </tr>
            @endforeach
